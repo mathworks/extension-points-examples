@@ -1,0 +1,54 @@
+{
+    "mw.desktop.quickAccess": {
+        "items": [
+            {
+                "name": "openCustomFunction",
+                "type": "PushButton",
+                "text": "Open Custom Function",
+                "description": "Open my custom function",
+                "icon": "./icons/open_16.png",
+                "command": "openMyFunction"
+            }
+        ]
+    },
+    "mw.desktop.addressBar.displayedRoots": [
+        {
+            "text": "My Cloud Drive",
+            "icon": "./icons/cloudFolderIcon.svg",
+            "path": "/path/to/MyCloudDrive"
+        }
+    ],
+    "mw.fileTypes.icons": {
+        "xlsx": "./icons/excelWorksheetIcon.svg",
+        "docx": "./icons/wordDocIcon.svg"
+    },
+    "mw.fileTypes.labels": {
+        "xlsx": "Microsoft Excel Worksheet",
+        "docx": "Microsoft Word Document"
+    },
+    "mw.fileTypes.groups": {
+        "codeFiles": [
+            "m",
+            "mlx",
+            "p"
+        ]
+    },
+    "mw.fileTypes.fileNameValidation": {
+        "groups.codeFiles": {
+            "errorRegexPatterns": [
+                {
+                    "pattern": "^(?!.*taboo).*",
+                    "flags": "ig",
+                    "errorLabel": "Should not contain 'taboo' in a code file's name"
+                }
+            ],
+            "warningRegexPatterns": [
+                {
+                    "pattern": "^.{0,25}$",
+                    "flags": "ig",
+                    "warningLabel": "Filename is too long for a code file"
+                }
+            ]
+        }
+    }
+}
