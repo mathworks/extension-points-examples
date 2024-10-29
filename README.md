@@ -6,9 +6,9 @@
 <br>
 
 You can extend various functionalities of the MATLAB&reg; desktop using Extension Points. For example, you can add custom items to the Quick Access Toolbar or change the icon or label for a file type in the Files panel.
-<br>
 
 Includes examples for the following Extension Points. These customizations are enabled as soon as you install the toolbox.
+
 <br>
 
 #### Add an Item to the Quick Access Toolbar
