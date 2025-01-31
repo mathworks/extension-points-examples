@@ -1,15 +1,16 @@
 {
     "mw.desktop.quickAccess": {
-        "items": [
-            {
-                "name": "openCustomFunction",
-                "type": "PushButton",
+       "items": [
+        {
+            "name": "mytoolbox.MyQAItem",
+            "type": "PushButton",
+            "action": {
                 "text": "Open Custom Function",
                 "description": "Open my custom function",
                 "icon": "./icons/open_16.png",
-                "command": "openMyFunction"
+                "callback": "openMyFunction"
             }
-        ]
+        }]
     },
     "mw.desktop.addressBar.displayedRoots": [
         {
@@ -50,5 +51,88 @@
                 }
             ]
         }
+    },
+    "mw.desktop.fileBrowsers.contextMenu": {
+        "sections": [
+            "#acme.myReferencedSection",
+            {
+                "name": "acme.myInlineDefinedSection",
+                "type": "SimpleMenuSection",
+                "items": [{
+                    "name": "acme.myInlineDefinedItem",
+                    "type": "SimpleMenuItem",
+                    "when": "selection.containsFileType.foo",
+                    "action": {
+                        "name": "acme.myInlineDefinedAction",
+                        "type": "Action",
+                        "text": "In-line Defined Custom Action",
+                        "icon": "./icons/open_16.png",
+                        "callback": "customMenuItemCallback"
+                    }
+                }]
+            }
+        ]
+    },
+    "acme.myReferencedSection": {
+        "type": "SimpleMenuSection",
+        "items": [
+            "#acme.myReferencedItem",
+            "#acme.myReferencedPopupMenuItem"
+        ],
+        "extensible": false
+    },
+    "acme.myReferencedItem": {
+        "type": "SimpleMenuItem",
+        "when": "selection.containsFileType.foo",
+        "action": "#acme.myReferencedAction"
+    },
+    "acme.myReferencedAction": {
+        "type": "Action",
+        "text": "Referenced Custom Action",
+        "icon": "./icons/open_16.png",
+        "callback": "customMenuItemCallback",
+        "when": "selection.containsFileType.foo"
+    },
+    "acme.myReferencedPopupMenuItem": {
+        "type": "SimpleMenuItem",
+        "action": "#acme.myPopupAcmeAction",
+        "popup": "#acme.myPopupMenu" 
+    },
+    "acme.myPopupAcmeAction": {
+        "type": "Action",
+        "text": "Acme",
+        "icon": "./icons/display_16.png"
+    },
+    "acme.myPopupMenu": {
+        "type": "SimpleMenu",
+        "sections": [{
+            "type": "SimpleMenuSection",
+            "name": "acme.myPopupMenuSection",
+            "items": [
+                "#acme.myCustomPopupMenuItem1",
+                "#acme.myCustomPopupMenuItem2"
+            ]
+        }]
+    },
+    "acme.myCustomPopupMenuItem1": {
+        "type": "SimpleMenuItem",
+        "action": "#acme.openInAcmeAction"
+    },
+    "acme.myCustomPopupMenuItem2": {
+        "type": "SimpleMenuItem",
+        "action": "#acme.openFooFileTypeInAcmeAction"
+    },
+    "acme.openInAcmeAction": {
+        "type": "Action",
+        "text": "Open in Acme...",
+        "icon": "./icons/open_16.png",
+        "callback": "customMenuItemCallback"
+    },
+    "acme.openFooFileTypeInAcmeAction": {
+        "type": "Action",
+        "when": "selection.containsFileType.foo",
+        "text": "Enabled only when .foo filetype is selected",
+        "icon": "./icons/open_16.png",
+        "callback": "customMenuItemCallback"
     }
 }

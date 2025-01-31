@@ -12,10 +12,17 @@ Includes examples for the following Extension Points. These customizations are e
 <br>
 
 
-#### Add an Item to the Quick Access Toolbar
+#### Add an item to the Quick Access Toolbar
 `mw.desktop.quickAccess` - Add a new button to the Quick Access Toolbar that triggers a MATLAB callback function.
 
 <img src="./screenshots/demo-quickAccess.png" width=450 height=75 alt="preview"/>
+
+<br>
+
+#### Add an item to the Files and Projects Panel Context Menus
+`mw.desktop.quickAccess` - Add new menu items / submenus to the Files Panel and Projects Panel context menusm, that show up conditionally (eg. for specific filetype selections) and triggers a MATLAB callback function when clicked.
+
+<img src="./screenshots/demo-contextMenu.png" width=450 height=310 alt="preview"/>
 
 <br>
 
