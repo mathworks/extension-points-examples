@@ -17,12 +17,16 @@ Includes examples for the following Extension Points. These customizations are e
 
 <img src="./screenshots/demo-quickAccess.png" width=450 height=75 alt="preview"/>
 
+*Note: This Extension Point is compatible from R2025a onwards.*
+
 <br>
 
 #### Add an item to the Files and Projects Panel Context Menus
-`mw.desktop.quickAccess` - Add new menu items / submenus to the Files Panel and Projects Panel context menusm, that show up conditionally (eg. for specific filetype selections) and triggers a MATLAB callback function when clicked.
+`mw.desktop.fileBrowsers.contextMenus` - Add new menu items / submenus to the Files Panel and Projects Panel context menus, that show up conditionally (e.g. for specific filetype selections) and triggers a MATLAB callback function when clicked.
 
 <img src="./screenshots/demo-contextMenu.png" width=450 height=310 alt="preview"/>
+
+*Note: This Extension Point is compatible from R2025a onwards.*
 
 <br>
 
