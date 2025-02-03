@@ -22,7 +22,7 @@ Includes examples for the following Extension Points. These customizations are e
 <br>
 
 #### Add an item to the Files and Projects Panel Context Menus
-`mw.desktop.fileBrowsers.contextMenus` - Add new menu items / submenus to the Files Panel and Projects Panel context menus, that show up conditionally (e.g. for specific filetype selections) and triggers a MATLAB callback function when clicked.
+`mw.desktop.fileBrowsers.contextMenu` - Add new menu items / submenus to the Files Panel and Projects Panel context menus, that show up conditionally (e.g. for specific filetype selections) and triggers a MATLAB callback function when clicked.
 
 <img src="./screenshots/demo-contextMenu.png" width=450 height=310 alt="preview"/>
 
