@@ -66,7 +66,7 @@ Requires MATLAB release R2024b or newer
 
 
 ## Getting Started
-[Extend MATLAB Using Extension Points (Beta)](https://www.mathworks.com/help/matlab/matlab_env/extend-matlab-using-extension-points-beta.html)
+[Extend MATLAB Using Extension Points](https://www.mathworks.com/help/matlab/extend-the-desktop.html)
 
 You can choose to modify the existing example `extensions.json` within this toolbox or create your own toolbox using the following instructions.
 
