@@ -20,12 +20,12 @@
         }
     ],
     "mw.fileTypes.icons": {
-        "xlsx": "./icons/excelWorksheetIcon.svg",
-        "docx": "./icons/wordDocIcon.svg"
+        "foo": "./icons/foo.svg",
+        "bar": "./icons/bar.svg"
     },
     "mw.fileTypes.labels": {
-        "xlsx": "Microsoft Excel Worksheet",
-        "docx": "Microsoft Word Document"
+        "foo": "Custom Foo Label",
+        "bar": "Custom Bar Label"
     },
     "mw.fileTypes.groups": {
         "codeFiles": [
