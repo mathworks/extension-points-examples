@@ -34,7 +34,7 @@ Includes examples for the following Extension Points. These customizations are e
 #### Add New Displayed Roots to the Address Bar
 `mw.desktop.addressBar.displayedRoots` - Customize the list of displayed roots in the Address Bar.
 
-<img src="./images/demo-addressBarDisplayedRoots.png" width=450 height=82 alt="preview"/>
+<img src="./images/demo-addressBarDisplayedRoots.png" width=450 height=302 alt="preview"/>
 
 <br>
 
@@ -44,7 +44,7 @@ Includes examples for the following Extension Points. These customizations are e
 
 `mw.fileTypes.labels` — Specify the label that displays for a file type in the Files panel, including the Type column and File Preview.
 
-<img src="./images/demo-icons-labels.png" width=450 height=82 alt="preview"/>
+<img src="./images/demo-icons-labels.png" width=450 height=302 alt="preview"/>
 
 <br>
 
