@@ -15,7 +15,7 @@
     "mw.desktop.addressBar.displayedRoots": [
         {
             "text": "My Cloud Drive",
-            "icon": "./icons/cloudFolderIcon.svg",
+            "icon": "./icons/cloud.svg",
             "path": "/path/to/MyCloudDrive"
         }
     ],
