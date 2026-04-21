@@ -1,4 +1,4 @@
-# Extension Points Examples (Beta)
+# Extension Points Examples
 
 [![View <Extension Points Examples> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/174625-extension-points-examples)
 
